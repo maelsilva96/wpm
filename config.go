@@ -34,6 +34,10 @@ func LoadConfig() {
 	}
 }
 
+func GetConfig() Config {
+	return config
+}
+
 func SendData(statusCode int, headers map[string]string, data []byte) {
 	model := ModelBind{}
 	model.Body = data
