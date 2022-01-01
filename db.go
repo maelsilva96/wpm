@@ -3,6 +3,7 @@ package wpm
 import (
 	"database/sql"
 	"github.com/globalsign/mgo/bson"
+	_ "github.com/mattn/go-sqlite3"
 )
 
 func LoadModelBind() {
